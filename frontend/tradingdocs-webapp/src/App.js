@@ -8,31 +8,16 @@ import HomePage from "./components/site-compos/HomePage";
 
 import AppAppBar from "./components/site-compos/AppAppBar";
 
-
 export const UserContext = createContext();
 
-
-
 function App() {
-
-
-	
 	return (
 		<BrowserRouter>
-			
-				<AppAppBar />
-				
-				<Routes>
-				
-					
-					
-					<Route path="/" element={<HomePage />} />
-					
-					
-					
-				</Routes>
-				
-		
+			<AppAppBar />
+
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+			</Routes>
 		</BrowserRouter>
 	);
 }
