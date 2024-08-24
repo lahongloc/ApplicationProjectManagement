@@ -17,6 +17,18 @@ function App() {
 
 			<Routes>
 				<Route path="/" element={<HomePage />} />
+				{isNormalUser(user) && (
+					<>
+						<Route
+							path="/upload-documents"
+							element={<UploadDocument />}
+						/>
+						<Route
+							path="/update-document"
+							element={<UpdateDocument />}
+						/>
+					</>
+				)}
 			</Routes>
 		</BrowserRouter>
 	);
